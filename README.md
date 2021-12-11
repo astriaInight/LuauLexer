@@ -53,10 +53,10 @@ Outputs:
 
 ### What does the output mean?
 #### matches
-List of exact strings (or string captures) that were matched with string.match.
+List of exact strings (or string captures) that were matched with `string.match`.
 
 #### raw
-In most cases, the same as matches[1]. This just excludes any string captures.
+In most cases, the same as `matches[1]`. This just excludes any string captures.
 
 #### type
 The type of "token" each part of the string has.
