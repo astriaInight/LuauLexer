@@ -15,7 +15,7 @@
 ## Examples of use
 ### Parsing a lua string
 Some arbitrary code:
-```luau
+```lua
 local something = "a string"
 print("this is " .. something)
 ```
