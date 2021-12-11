@@ -48,7 +48,7 @@ Outputs:
     },
 ...
 }
--- Shortened for simplicity
+-- Shortened for simplicity (there are gonna be more than 3 tokens, ofc)
 ```
 
 ### What does the output mean?
