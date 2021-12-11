@@ -10,8 +10,7 @@
         └─ Keywords
 ```
 
-## Syntax
-### Examples
+### Examples of use
 #### Parsing a lua string
 Some arbitrary code:
 ```luau
@@ -45,21 +44,6 @@ Outputs:
     ["matches"] =  ▶ {...},
     ["raw"] = "something",
     ["type"] = "word"
-},
-{
-    ["matches"] =  ▶ {...},
-    ["raw"] = " ",
-    ["type"] = "whitespace"
-},
-{
-    ["matches"] =  ▶ {...},
-    ["raw"] = "=",
-    ["type"] = "operator"
-},
-{
-    ["matches"] =  ▶ {...},
-    ["raw"] = " ",
-    ["type"] = "whitespace"
 },
 ...
 -- Shortened for simplicity
