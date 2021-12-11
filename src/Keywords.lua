@@ -10,7 +10,7 @@ local keywords = {
 	["repeat"] = true,
 	["until"] = true,
 	["nil"] = true,
-	["nil"] = true,
+	["function"] = true
 }
 
 return keywords

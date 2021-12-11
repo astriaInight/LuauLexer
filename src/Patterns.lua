@@ -4,11 +4,11 @@
 
 local patterns = {
 	{
-		pattern = "^([\"']).-%1",
+		pattern = "^%[%[.-%]%]",
 		name = "string"
 	},
 	{
-		pattern = "^%[%[.-%]%]",
+		pattern = "^([\"']).-%1",
 		name = "string"
 	},
 	{
