@@ -2,7 +2,7 @@
 
 ## Module structure
 - The location of each module is also listed at the top of the file
-- You can make the latest version of this module by downloading/cloning the repo and organizing the files as stated below...
+- You can make the latest version of this module by downloading/cloning the repo and organizing the modules in Roblox Studio as stated below...
 ```
    Lexer
     └─ Patterns
