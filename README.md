@@ -53,7 +53,7 @@ Outputs:
 
 ### What does the output mean?
 #### matches
-The exact string that was matched with string.match.
+List of exact strings (or string captures) that were matched with string.match.
 
 #### raw
 In most cases, the same as matches[1]. This just excludes any string captures.
