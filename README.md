@@ -2,10 +2,10 @@
 
 ## Module structure
 ```
-| Lexer
-| └─ Patterns
-| └─ ScanWords
-|    └─ Bools
-|    └─ Globals
-|    └─ Keywords
+└─ Lexer
+    └─ Patterns
+    └─ ScanWords
+        └─ Bools
+        └─ Globals
+        └─ Keywords
 ```
