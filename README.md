@@ -12,8 +12,8 @@
         └─ Keywords
 ```
 
-### Examples of use
-#### Parsing a lua string
+## Examples of use
+### Parsing a lua string
 Some arbitrary code:
 ```luau
 local something = "a string"
