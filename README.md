@@ -2,7 +2,7 @@
 
 ## Module structure
 ```
-└─ Lexer
+   Lexer
     └─ Patterns
     └─ ScanWords
         └─ Bools
