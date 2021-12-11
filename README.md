@@ -1,4 +1,5 @@
 # Luau Lexer
+A Luau lexer designed for Roblox.
 
 ## Module structure
 - The location of each module is also listed at the top of the file
