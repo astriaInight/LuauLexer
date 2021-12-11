@@ -31,21 +31,23 @@ print(parsed)
 Outputs:
 ```lua
 {
-    ["matches"] =  ▶ {...},
-    ["raw"] = "local",
-    ["type"] = "keyword"
-},
-{
-    ["matches"] =  ▶ {...},
-    ["raw"] = " ",
-    ["type"] = "whitespace"
-},
-{
-    ["matches"] =  ▶ {...},
-    ["raw"] = "something",
-    ["type"] = "word"
-},
+    {
+        ["matches"] =  ▶ {...},
+        ["raw"] = "local",
+        ["type"] = "keyword"
+    },
+    {
+        ["matches"] =  ▶ {...},
+        ["raw"] = " ",
+        ["type"] = "whitespace"
+    },
+    {
+        ["matches"] =  ▶ {...},
+        ["raw"] = "something",
+        ["type"] = "word"
+    },
 ...
+}
 -- Shortened for simplicity
 ```
 
