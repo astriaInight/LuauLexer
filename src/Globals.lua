@@ -7,6 +7,7 @@ local keywords = {
 	["string"] = true,
 	["math"] = true,
 	["table"] = true,
+	["script"] = true,
 }
 
 return keywords
