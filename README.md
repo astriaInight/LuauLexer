@@ -1,6 +1,7 @@
 # Luau Lexer
 
 ## Module structure
+- The location of each module is also listed at the top of the file
 ```
    Lexer
     └─ Patterns
