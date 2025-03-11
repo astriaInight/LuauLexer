@@ -8,7 +8,19 @@ local patterns = {
 		name = "string"
 	},
 	{
-		pattern = "^([\"']).-%1",
+		pattern = "^%-%-[^\n]*",
+		name = "comment"
+	},
+	{
+		pattern = "^%-%-%[%[.-%]%]",
+		name = "comment"
+	},
+	{
+		pattern = "^([\"']).-[^\\]%1",
+		name = "string"
+	},
+	{
+		pattern = "^([\"'])%1",
 		name = "string"
 	},
 	{
@@ -24,12 +36,16 @@ local patterns = {
 		name = "int"
 	},
 	{
-		pattern = "^%w+",
-		name = "word"
+		pattern = "^(==|~=|<=|>=|%.%.%.?|[%-%+/%*=<>])",
+		name = "operator"
 	},
 	{
-		pattern = "^([%-%+/%*=])",
-		name = "operator"
+		pattern = "^([{}%(%)%[%]%;%,:%.])",
+		name = "punctuation"
+	},
+	{
+		pattern = "^%w+",
+		name = "word"
 	},
 	{
 		pattern = "^%s+",
