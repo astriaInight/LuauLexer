@@ -1,16 +1,31 @@
 -- Lexer.lua/ScanWords.lua/Keywords.lua
--- List of Luau keywords
+-- Complete list of Luau keywords
 
 local keywords = {
-	["local"] = true,
-	["if"] = true,
-	["then"] = true,
+	["and"] = true,
+	["break"] = true,
+	["do"] = true,
+	["else"] = true,
+	["elseif"] = true,
 	["end"] = true,
-	["while"] = true,
-	["repeat"] = true,
-	["until"] = true,
+	["false"] = true,
+	["for"] = true,
+	["function"] = true,
+	["if"] = true,
+	["in"] = true,
+	["local"] = true,
 	["nil"] = true,
-	["function"] = true
+	["not"] = true,
+	["or"] = true,
+	["repeat"] = true,
+	["return"] = true,
+	["then"] = true,
+	["true"] = true,
+	["until"] = true,
+	["while"] = true,
+	["continue"] = true,
+	["export"] = true,
+	["type"] = true
 }
 
 return keywords

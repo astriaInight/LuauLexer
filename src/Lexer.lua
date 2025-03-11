@@ -25,20 +25,29 @@ end
 --// Module funcs
 function lexer:next()
 	local remainingStr = string.sub(self.input, self.position, self.inputLen)
+	
+	-- return on eof
+	if self.position > self.inputLen then
+		return
+	end
+	
 	local matches, raw, token = GetMatch(remainingStr)
 	
-	assert(matches, "Couldn't find any matches at position "..self.position)
-	
-	table.insert(self.result, {
-		raw = raw,
-		matches = matches,
-		type = token
-	})
-	
-	self.position += #raw
-	
-	if not (self.position > self.inputLen) then
-		self:next()
+	if not matches then
+		-- handle error + advance instead of using assertion here
+		table.insert(self.result, {
+			raw = string.sub(remainingStr, 1, 1),
+			matches = {string.sub(remainingStr, 1, 1)},
+			type = "unknown"
+		})
+		self.position += 1
+	else
+		table.insert(self.result, {
+			raw = raw,
+			matches = matches,
+			type = token
+		})
+		self.position += #raw
 	end
 end
 
@@ -48,7 +57,10 @@ function lexer:Parse(input)
 	self.inputLen = #input
 	self.result = {}
 	
-	self:next()
+	-- avoid stack overflow calls with a loop
+	while self.position <= self.inputLen do
+		self:next()
+	end
 	
 	self.result = wordScanner.Scan(self.result)
 	
